@@ -68,7 +68,8 @@ SwaggerUI utilzing the below spec can be found here: https://www.terracetta.com/
 
 Specification conforms to openapi specification version 3.0.4
 
-`{
+```
+{
     "openapi": "3.0.4",
     "servers": [
         {
@@ -155,7 +156,8 @@ Specification conforms to openapi specification version 3.0.4
         }
     },
     "components": {}
-}`
+}
+```
 
 ## Generation
 
