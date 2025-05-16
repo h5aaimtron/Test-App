@@ -1,21 +1,23 @@
-<div class="row g-3">
-  <div class="col-md-6 col-sm-12">
-    <h2>Source Data</h2>
-    <textarea [(ngModel)]="srcData" rows="8" class="form-control"></textarea>
+<div class="container">
+  <div class="row mt-3 g-3">
+    <div class="col-md-6 col-sm-12">
+      <h2>Source Data</h2>
+      <textarea [(ngModel)]="srcData" rows="12" class="form-control"></textarea>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <h2>Resulting Data</h2>
+      <textarea [(ngModel)]="dstData" rows="12" class="form-control"></textarea>
+    </div>
   </div>
-  <div class="col-md-6 col-sm-12">
-    <h2>Resulting Data</h2>
-    <textarea [(ngModel)]="dstData" rows="8" class="form-control"></textarea>
-  </div>
-</div>
-<div class="row">
-  <div class="col text-center">
-    <button class="btn-primary me-3">
-      Convert to JSON
-    </button>
-    <button class="btn-primary me-3">
-      Convert to XML
-    </button>
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn-primary me-3" (click)="convertToJSON()">
+        Convert to JSON
+      </button>
+      <button class="btn-primary me-3" (click)="convertToXML()">
+        Convert to XML
+      </button>
+    </div>
   </div>
 </div>
 <router-outlet />
