@@ -11,6 +11,8 @@ This application provides a simple test of the Converter microservice, allowing 
 
 ## API Specification
 
+SwaggerUI utilzing the below spec can be found here: https://www.terracetta.com/swagger/index.html
+
 Specification conforms to openapi specification version 3.0.4
 
 `{
