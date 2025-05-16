@@ -1,4 +1,108 @@
-# TestApp
+# TestApp for CS361 - Microservice
+
+This application provides a simple test of the Converter microservice, allowing the user to convert between JSON and XML.
+
+## Example Call
+
+
+## UML Diagram
+
+
+
+## API Specification
+
+Specification conforms to openapi specification version 3.0.4
+
+`{
+    "openapi": "3.0.4",
+    "servers": [
+        {
+            "url": "https://converter.api.terracette.com"
+        }
+    ],
+    "info": {
+        "title": "cs361.xmltojson.microservice",
+        "version": "1.0"
+    },
+    "paths": {
+        "/Converter": {
+            "get": {
+                "tags": [
+                    "Converter"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/Converter/xmltojson": {
+            "post": {
+                "tags": [
+                    "Converter"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/Converter/jsontoxml": {
+            "post": {
+                "tags": [
+                    "Converter"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/": {
+            "get": {
+                "tags": [
+                    "cs361.xmltojson.microservice"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "text/plain": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {}
+}`
+
+## Generation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.14.
 
