@@ -1,8 +1,14 @@
 <div class="container">
-  <div class="row mt-3 g-3">
+  <div class="row mt-3 g-3 mb-3">
     <div class="col-md-6 col-sm-12">
       <h2>Source Data</h2>
-      <textarea [(ngModel)]="srcData" rows="12" class="form-control"></textarea>
+      <div class="d-flex flex-fill border">
+        <div class="line-numbers" #lineNumbers></div>
+        <div class="input-area">
+          <textarea #inputArea [(ngModel)]="srcData" (scroll)="onScroll()" (paste)="onKey()" (input)="onKey()" rows="12"
+            class="h-100 w-100 input-area"></textarea>
+        </div>
+      </div>
     </div>
     <div class="col-md-6 col-sm-12">
       <h2>Resulting Data</h2>

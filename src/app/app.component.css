@@ -1,0 +1,23 @@
+.line-numbers {
+    width: 50px;
+    padding: 8px;
+    text-align: right;
+    background-color: #f0f0f0;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre-wrap;
+}
+
+.input-area {
+    flex: 1;
+    padding: 4px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre-wrap;
+    overflow: auto;
+}

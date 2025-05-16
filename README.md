@@ -4,7 +4,7 @@ This application provides a simple test of the Converter microservice, allowing 
 
 ## Example Call
 
-The following are example programmatic calls to the microservice, which provides 2 conversion function endpoints.
+The following are example programmatic calls to the microservice, written in TypeScript/JavaScript, which provides 2 conversion function endpoints.
 
 ```
   /**
