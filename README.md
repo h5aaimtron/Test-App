@@ -1,4 +1,4 @@
-# TestApp for CS361 - Microservice
+# Test App for Conversion Microservice (XML <--> JSON)
 
 This application provides a simple test of the Converter microservice, allowing the user to convert between JSON and XML.
 
