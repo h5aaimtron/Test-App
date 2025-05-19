@@ -124,15 +124,17 @@ Specification conforms to openapi specification version 3.0.4
                 "tags": [
                     "Converter"
                 ],
-                "parameters": [
-                    {
-                        "name": "body",
-                        "in": "query",
-                        "schema": {
-                            "type": "string"
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/xml": {
+                            "schema": {
+                                "type": "string",
+                                "example": "<note><to>User</to><from>Server</from><message>Hello</message></note>"
+                            }
                         }
                     }
-                ],
+                },
                 "responses": {
                     "200": {
                         "description": "OK"
@@ -145,15 +147,23 @@ Specification conforms to openapi specification version 3.0.4
                 "tags": [
                     "Converter"
                 ],
-                "parameters": [
-                    {
-                        "name": "body",
-                        "in": "query",
-                        "schema": {
-                            "type": "string"
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "example": {
+                                    "note": {
+                                        "to": "User",
+                                        "from": "Server",
+                                        "message": "Hello"
+                                    }
+                                }
+                            }
                         }
                     }
-                ],
+                },
                 "responses": {
                     "200": {
                         "description": "OK"
@@ -176,6 +186,18 @@ Specification conforms to openapi specification version 3.0.4
                                 }
                             }
                         }
+                    }
+                }
+            }
+        },
+        "/api/HealthCheck": {
+            "get": {
+                "tags": [
+                    "HealthCheck"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
                     }
                 }
             }
