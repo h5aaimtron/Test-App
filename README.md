@@ -4,7 +4,7 @@ This application provides a simple test of the Converter microservice, allowing 
 
 ## Example Call
 
-The following are example programmatic calls to the microservice, written in TypeScript/JavaScript, which provides 2 conversion function endpoints.
+The following are example programmatic calls to the microservice, written in TypeScript/JavaScript, which provides 2 conversion function endpoints. Both calls can be completed with simple POST requests to their given endpoints, setting the value as a string in the request body, and providing the 'Content-Type' header with the value 'text/plain'. You should also set the 'Accept' header with the value 'text/plain' as error messages will not return in the requested endpoint data format, but as plain text. After sending a request and receiving a response (these are synchronous calls), you can then serialize the returned string value into the appropriate object type. Ex: JSON.parse(response.body); for serializing a JSON string into a javascript object.
 
 ```
   /**
