@@ -82,7 +82,7 @@ Unexpected end of file has occurred. The following elements are not closed: root
 JsonToken EndArray is not valid for closing JsonType Object. Path 'root.person[1]', line 18, position 5.
 ```
 
-## UML Diagram
+## UML Diagrams
 ![alt text](https://github.com/h5aaimtron/Test-App/blob/main/xmltojson-uml.png "XML to JSON UML Diagram")
 
 ![alt text](https://github.com/h5aaimtron/Test-App/blob/main/jsontoxml-uml.png "JSON to XML UML Diagram")
