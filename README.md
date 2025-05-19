@@ -59,9 +59,9 @@ The following are example programmatic calls to the microservice, written in Typ
 ```
 
 ## UML Diagram
-![alt text](https://github.com/h5aaimtron/test-app/xmltojson-uml.png "XML to JSON UML Diagram")
+![alt text](https://github.com/h5aaimtron/Test-App/xmltojson-uml.png "XML to JSON UML Diagram")
 
-![alt text](https://github.com/h5aaimtron/test-app/jsontoxml-uml.png "JSON to XML UML Diagram")
+![alt text](https://github.com/h5aaimtron/Test-App/jsontoxml-uml.png "JSON to XML UML Diagram")
 
 
 ## API Specification
