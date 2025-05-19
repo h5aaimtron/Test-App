@@ -58,6 +58,30 @@ The following are example programmatic calls to the microservice, written in Typ
   }
 ```
 
+### xmltojson Success Response (200 OK)
+
+```
+{"?xml":{"@version":"1.0","@standalone":"no"},"root":{"person":[{"@id":"1","name":"Alan","url":"http://www.google.com"},{"@id":"2","name":"Louis","url":"http://www.yahoo.com"}]}}
+```
+
+### xmltojson Error Response (400 Bad Request)
+
+```
+Unexpected end of file has occurred. The following elements are not closed: root. Line 19, position 7.
+```
+
+### jsontoxml Success Response (200 OK)
+
+```
+{"?xml":{"@version":"1.0","@standalone":"no"},"root":{"person":[{"@id":"1","name":"Alan","url":"http://www.google.com"},{"@id":"2","name":"Louis","url":"http://www.yahoo.com"}]}}
+```
+
+### jsontoxml Error Response (400 Bad Request)
+
+```
+JsonToken EndArray is not valid for closing JsonType Object. Path 'root.person[1]', line 18, position 5.
+```
+
 ## UML Diagram
 ![alt text](https://github.com/h5aaimtron/Test-App/blob/main/xmltojson-uml.png "XML to JSON UML Diagram")
 
