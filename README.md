@@ -90,7 +90,7 @@ JsonToken EndArray is not valid for closing JsonType Object. Path 'root.person[1
 
 ## API Specification
 
-SwaggerUI utilzing the below spec can be found here: https://www.terracetta.com/swagger/index.html
+SwaggerUI utilzing the below spec can be found here: https://www.terracette.com/swagger/index.html
 
 Specification conforms to openapi specification version 3.0.4
 
